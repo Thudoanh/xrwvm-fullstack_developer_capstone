@@ -1,0 +1,212 @@
+
+<html>
+<head>
+  <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f5f7fa;
+    }
+    .banner {
+      text-align: center;
+      padding: 40px 10%;
+      background: linear-gradient(135deg, #0e7c86, #14b8b8);
+      color: #ffffff;
+      border-radius: 8px 8px 0 0;
+    }
+    .banner h1 {
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .banner p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .outer-card {
+      width: 85%;
+      margin: auto;
+      margin-top: 4%;
+      margin-bottom: 4%;
+      border: none;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+    .contact-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 24px;
+      padding: 40px 6%;
+      background-color: #ffffff;
+    }
+    .contact-info {
+      flex: 1 1 320px;
+    }
+    .contact-info h3 {
+      color: #14343b;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+    .contact-icon {
+      background-color: #0e7c86;
+      color: #ffffff;
+      width: 38px;
+      height: 38px;
+      min-width: 38px;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 700;
+      font-size: 1rem;
+    }
+    .contact-item .label {
+      font-weight: 600;
+      color: #14343b;
+      margin-bottom: 2px;
+    }
+    .contact-item .detail {
+      color: #4a4a4a;
+      font-size: 0.95rem;
+      line-height: 1.4;
+    }
+    .hours-table {
+      flex: 1 1 320px;
+      background-color: #f5f7fa;
+      border-radius: 8px;
+      padding: 24px 28px;
+    }
+    .hours-table h3 {
+      color: #14343b;
+      font-weight: 700;
+      margin-bottom: 18px;
+    }
+    .hours-row {
+      display: flex;
+      justify-content: space-between;
+      padding: 8px 0;
+      border-bottom: 1px solid #e0e4e8;
+      font-size: 0.95rem;
+      color: #4a4a4a;
+    }
+    .hours-row:last-child {
+      border-bottom: none;
+    }
+    .hours-row span.day {
+      font-weight: 600;
+      color: #14343b;
+    }
+    .social-links {
+      margin-top: 22px;
+    }
+    .social-links a {
+      display: inline-block;
+      margin-right: 14px;
+      color: #0e7c86;
+      font-weight: 600;
+      text-decoration: none;
+      font-size: 0.92rem;
+    }
+    .social-links a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<div>
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" style="font-size: larger;" href="/about">About Us</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active" style="font-size: larger;" aria-current="page" href="/contact">Contact Us</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="card outer-card">
+    <div class="banner" name="contact-header">
+      <h1>Contact Us</h1>
+      <p>
+        Have a question about a branch, a review, or your account? Our support team is
+        based at our national headquarters and is happy to help.
+      </p>
+    </div>
+
+    <div class="contact-section">
+      <div class="contact-info">
+        <h3>Get in Touch</h3>
+
+        <div class="contact-item">
+          <div class="contact-icon">A</div>
+          <div>
+            <div class="label">Head Office Address</div>
+            <div class="detail">1275 Meridian Parkway, Suite 400<br>Columbus, OH 43215, United States</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">P</div>
+          <div>
+            <div class="label">Phone</div>
+            <div class="detail">1-800-555-0199 (Toll-Free)<br>Mon&ndash;Fri, 8:00 AM&ndash;7:00 PM EST</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">E</div>
+          <div>
+            <div class="label">Email</div>
+            <div class="detail">support@bestcars.com<br>press@bestcars.com</div>
+          </div>
+        </div>
+
+        <div class="contact-item">
+          <div class="contact-icon">S</div>
+          <div>
+            <div class="label">Customer Support</div>
+            <div class="detail">Live chat available on our Help Center<br>Average response time: under 2 hours</div>
+          </div>
+        </div>
+
+        <div class="social-links">
+          <a href="#">Facebook</a>
+          <a href="#">Twitter</a>
+          <a href="#">Instagram</a>
+          <a href="#">LinkedIn</a>
+        </div>
+      </div>
+
+      <div class="hours-table">
+        <h3>Head Office Hours</h3>
+        <div class="hours-row"><span class="day">Monday &ndash; Friday</span><span>8:00 AM &ndash; 7:00 PM</span></div>
+        <div class="hours-row"><span class="day">Saturday</span><span>9:00 AM &ndash; 5:00 PM</span></div>
+        <div class="hours-row"><span class="day">Sunday</span><span>Closed</span></div>
+        <div class="hours-row"><span class="day">Public Holidays</span><span>Closed</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</html>
