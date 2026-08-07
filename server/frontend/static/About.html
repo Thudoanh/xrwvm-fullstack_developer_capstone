@@ -1,6 +1,92 @@
 <html>
 <head>
   <!-- Link the style sheet here -->
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    body {
+      background-color: #f5f7fa;
+    }
+    .banner {
+      text-align: center;
+      padding: 40px 10%;
+      background: linear-gradient(135deg, #0e7c86, #14b8b8);
+      color: #ffffff;
+      border-radius: 8px 8px 0 0;
+    }
+    .banner h1 {
+      font-weight: 700;
+      margin-bottom: 12px;
+    }
+    .banner p {
+      font-size: 1.1rem;
+      max-width: 700px;
+      margin: 0 auto;
+      line-height: 1.6;
+    }
+    .team-section {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 24px;
+      padding: 40px 5%;
+    }
+    .team-card {
+      width: 28%;
+      min-width: 260px;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 4px 14px rgba(0, 0, 0, 0.08);
+      overflow: hidden;
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .team-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 10px 22px rgba(0, 0, 0, 0.14);
+    }
+    .team-card img {
+      height: 260px;
+      object-fit: cover;
+      width: 100%;
+    }
+    .team-card .card-body {
+      text-align: center;
+      padding: 18px 16px 22px;
+    }
+    .team-card .title {
+      font-size: 1.2rem;
+      font-weight: 700;
+      margin-bottom: 2px;
+      color: #14343b;
+    }
+    .team-card .role {
+      color: #0e7c86;
+      font-weight: 600;
+      font-size: 0.95rem;
+      margin-bottom: 10px;
+    }
+    .team-card .card-text {
+      color: #4a4a4a;
+      font-size: 0.92rem;
+      line-height: 1.5;
+      margin-bottom: 10px;
+    }
+    .team-card .email {
+      font-size: 0.88rem;
+      color: #0e7c86;
+    }
+    .outer-card {
+      width: 85%;
+      margin: auto;
+      margin-top: 4%;
+      margin-bottom: 4%;
+      border: none;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+    }
+  </style>
 </head>
 <div>
   <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
@@ -24,45 +110,60 @@
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+
+  <div class="card outer-card">
+    <div class="banner" name="about-header">
+      <h1>About Us</h1>
+      <p>
+        Founded in 1998, Best Cars Dealership has grown from a single showroom in Ohio into a
+        nationwide network of 42 branches, serving more than 120,000 customers across the country.
+        We partner with both domestic and imported manufacturers to offer competitively priced
+        new and certified pre-owned vehicles, backed by transparent pricing and verified customer
+        reviews. Our mission is simple: help every customer drive away with confidence.
+      </p>
+    </div>
+
+    <div class="team-section">
+      <div class="card team-card">
+        <img class="card-img-top" src="https://randomuser.me/api/portraits/women/68.jpg" alt="Photo of Maria Torres">
         <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+          <p class="title">Maria Torres</p>
+          <p class="role">General Manager</p>
+          <p class="card-text">
+            Maria has led dealership operations for over 12 years, focused on building
+            long-term trust between customers and our branch network nationwide.
+          </p>
+          <p class="email">maria.torres@bestcars.com</p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card team-card">
+        <img class="card-img-top" src="https://randomuser.me/api/portraits/men/32.jpg" alt="Photo of David Chen">
         <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+          <p class="title">David Chen</p>
+          <p class="role">Head of Customer Experience</p>
+          <p class="card-text">
+            David oversees our review and feedback program, ensuring every customer voice
+            directly shapes how our branches serve the community.
+          </p>
+          <p class="email">david.chen@bestcars.com</p>
         </div>
       </div>
 
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
+      <div class="card team-card">
+        <img class="card-img-top" src="https://randomuser.me/api/portraits/women/45.jpg" alt="Photo of Sarah Whitfield">
         <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+          <p class="title">Sarah Whitfield</p>
+          <p class="role">Director of Sales</p>
+          <p class="card-text">
+            Sarah leads our nationwide sales strategy, helping local branches connect
+            buyers with the right vehicle at a fair, transparent price.
+          </p>
+          <p class="email">sarah.whitfield@bestcars.com</p>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
+  </div>
 </div>
 
 </html>
